@@ -17,5 +17,5 @@ class LoginSerializer(TokenObtainPairSerializer):
 
         if api_settings.UPDATE_LAST_LOGIN:
             update_last_login(None, self.user)
-
+        # print(data)
         return data
